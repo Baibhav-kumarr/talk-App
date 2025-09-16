@@ -10,7 +10,7 @@ const App = () => {
   const { authUser } = useContext(AuthContext);
 
   return (
-    <div className='bg-[url("./src/assets/bgImage.svg")] bg-contain'>
+    <div className='bg-[url("/bgImage.svg")] bg-contain'>
       <Toaster />
       <Routes>
         {/**we will check user is authenticated or not; if not authenticated he can't access

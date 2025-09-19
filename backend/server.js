@@ -19,8 +19,8 @@ const app = express();
 //initilise socket .io server
 const server = http.createServer(app);
 export const io = new Server( server ,{
-  cors: {origin: "*", // Replace with your frontend URL
-  }})
+  cors: {origin: "https://talk-app-client.onrender.com"}
+  })
 export const userSocketMap = {};//store user id and socket id store online suer data 
 
 //socket io connection handler
@@ -65,6 +65,11 @@ await connectDB();
 
 server.listen(PORT, () => {
   console.log(`Server running on ${PORT}`);
+});
+
+//export server for vercel deployment
+export default server;
+);
 });
 
 //export server for vercel deployment

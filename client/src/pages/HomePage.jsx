@@ -3,7 +3,7 @@ import { useState } from 'react';
 //contain all 3 component
 import Sidebar from '../components/Sidebar.jsx';
 import RightSidebar from '../components/Rightsidebar.jsx';
-import ChatContainer from '../components/Chatcontainer.jsx';
+import ChatContainer from '../components/ChatContainer.jsx';
 import { ChatContext } from '../../context/ChatContext';
 
 const Homepage = () => {

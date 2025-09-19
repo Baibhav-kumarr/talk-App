@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { useState } from 'react';
 //contain all 3 component
 import Sidebar from '../components/Sidebar.jsx';
-import RightSidebar from '../components/Rightsidebar.jsx';
+import RightSidebar from '../components/RightSidebar.jsx';
 import ChatContainer from '../components/ChatContainer.jsx';
 import { ChatContext } from '../../context/ChatContext';
 
